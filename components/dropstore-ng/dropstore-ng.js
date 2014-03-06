@@ -54,7 +54,6 @@ angular.module("dropstore-ng", []).
                         deferred.reject(err)
                     } else {
                         logger.log('dropstore "'+cmdName+'" returned successfully', res);
-                        deferred.resolve(dropstoreDatastoreManager(res))
                     }
                 });
             }
